@@ -48,7 +48,7 @@ public class TestCRUD {
 				mlst.forEach(System.out::println);
 				break;
 			case 4:
-				int id1;
+				
 				System.out.println("Enter ID to Search");
 				id=sc.nextInt();
 				Movies m = mService.displayById(id);
