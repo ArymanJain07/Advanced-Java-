@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>LoginApplication</display-name>
+  <welcome-file-list>
+    <welcome-file>Login.html</welcome-file>
+    
+  </welcome-file-list>
+  <servlet>
+     <servlet-name>validate</servlet-name>
+     <servlet-class>com.demo.servlets.Authentication</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>validate</servlet-name>
+        <url-pattern>/validateUSer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>product</servlet-name>
+     <servlet-class>com.demo.servlets.ProductDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>product</servlet-name>
+        <url-pattern>/displayproducts</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>Register</servlet-name>
+     <servlet-class>com.demo.servlets.RegisterDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
