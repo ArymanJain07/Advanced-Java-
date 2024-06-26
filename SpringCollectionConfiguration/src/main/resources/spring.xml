@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context">
+
+	<bean id="emp" class="com.demo.beans.Employee">
+	
+		<property name="pid" value="101"/>
+		<property name="pname" value="Aryman"/>
+		<property name="addresses">
+			<set>
+				<value>Indore </value>
+				<value>Pune </value>
+				<value>Mumbai</value>
+			</set>
+		</property>
+		<property name="phone">
+			<list>
+				<value>9617124125</value>
+				<value>9616546478</value>
+				<value>7485753745</value>
+				<null></null>
+			</list>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="c++" value="1Months"></entry>
+				<entry key="java" value="2Months"></entry>
+				<entry key=".net" value="3Months"></entry>
+			</map>
+		</property>
+	</bean>
+	<bean id="emp2" class="com.demo.beans.Employee">
+	
+		<property name="pid" value="102"/>
+		<property name="pname" value="Ayush"/>
+		<property name="addresses">
+			<set>
+				<value>Indore </value>
+				<value>Pune </value>
+				<value>Mumbai</value>
+			</set>
+		</property>
+		<property name="phone">
+			<list>
+				<value>9124125</value>
+				<value>961658</value>
+				<value>7483745</value>
+				<null></null>
+			</list>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="c++" value="1Months"></entry>
+				<entry key="java" value="2Months"></entry>
+				<entry key=".net" value="3Months"></entry>
+			</map>
+		</property>
+	</bean>
+</beans>
